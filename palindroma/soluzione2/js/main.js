@@ -12,17 +12,19 @@ function palindroma(argomento){
     /* verifico se la stringa inserita dall'utente è un array di caratteri pari o dispari
     se l'array ha un numero di elementi pari tutti gli elementi saranno oggetto di confronto 
     se l'array ha un numero di elementi dispari l'elemento centrale non sarà soggetto al confronto, lo elimino, non importa quale valore sia */
-        if(stringa % 2 != 0){ //caso dispari
+        if(stringa.length % 2 != 0){ //caso dispari
             stringa = stringa.split('');
             stringa.splice(Math.floor(stringa.length/2), 1);
             stringa = stringa.join('');
         }
 
     // confronto caratteri il primo con l'ultimo, il secondo con il penultimo, il terzo con il terzultimo ...
+    console.log(stringa)
+    console.log(stringa.length)
+
     for(let i=0; i<stringa.length/2; i++){
         if (stringa[i] == stringa[(stringa.length -1) - i]){
             check++;
-            console.log(check)
         } 
     }
 
