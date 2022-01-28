@@ -15,7 +15,7 @@ function verificaPariDispari(valore){
 // verificaNumero(valore) verifica se il valore è compreso tra 1 e 5 
 // ritorna 1 in caso sia compreso, altrimenti 0
 function verificaNumero(valore){
-    valore = parseInt(valore);
+   
     let check = 0;
 
     if(valore > 0 && valore < 6){
@@ -70,7 +70,7 @@ console.log("L'utente ha scelto: " + sceltaPariDispari);
 let numeroUtente;
 let checkNumero = 0;
 do{
-    numeroUtente = prompt("Inserisci un numero da 1 a 5");
+    numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
     checkNumero = verificaNumero(numeroUtente);
 }while(checkNumero == 0);
 console.log("Numero utente: " + numeroUtente);
@@ -86,7 +86,7 @@ console.log("somma numeri: " + somma);
 
 
 if(pariDispari(somma) == sceltaPariDispari){
-    console.log("Ha vinto l'utente");
+    alert(`Ha vinto l'utente!! \nScelta utente: ${sceltaPariDispari}\n Numero utente ${numeroUtente}\n Numero PC: ${numeroPC}\n Somma numeri: ${somma}`);
 }else{
-    console.log("Ha vinto il PC");
+    alert(`Ha vinto il PC!! \nScelta utente: ${sceltaPariDispari}\n Numero utente ${numeroUtente}\n Numero PC: ${numeroPC}\n Somma numeri: ${somma}`);
 }
