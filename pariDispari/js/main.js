@@ -55,7 +55,6 @@ function pariDispari(valore){
 
 
 
-
 let sceltaPariDispari = "";
 let checkPariDispari = 0;
 do{
