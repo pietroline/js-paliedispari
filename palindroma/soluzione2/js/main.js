@@ -19,9 +19,6 @@ function palindroma(argomento){
         }
 
     // confronto caratteri il primo con l'ultimo, il secondo con il penultimo, il terzo con il terzultimo ...
-    console.log(stringa)
-    console.log(stringa.length)
-
     for(let i=0; i<stringa.length/2; i++){
         if (stringa[i] == stringa[(stringa.length -1) - i]){
             check++;
