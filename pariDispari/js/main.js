@@ -70,10 +70,9 @@ console.log("L'utente ha scelto: " + sceltaPariDispari);
 let numeroUtente;
 let checkNumero = 0;
 do{
-    const numeroUtente = prompt("Inserisci un numero da 1 a 5");
+    numeroUtente = prompt("Inserisci un numero da 1 a 5");
     checkNumero = verificaNumero(numeroUtente);
 }while(checkNumero == 0);
-
 console.log("Numero utente: " + numeroUtente);
 
 
