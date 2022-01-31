@@ -15,13 +15,11 @@ function palindroma(argomento){
         let stringaInversa = stringa.split('').reverse('').join('');
 
     //se la stringa è palindroma significa che stringa è uguale a stringaInversa
-        for(i=0; i<stringa.length; i++){
-            if(stringa[i] == stringaInversa[i]){
-                check++;
-            }
+        if(stringa == stringaInversa){
+            check++;
         }
 
-        if(check == stringa.length){
+        if(check == 1){
             alert(`"${argomento}" è palindroma` );
         }else{
             alert(`"${argomento}" NON è palindroma`);
